@@ -1,0 +1,28 @@
+body{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(46, 46, 201);
+}
+.btn{
+    font-size: 28px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 200px;
+}
+.output{
+    position:absolute;
+    font-size: 150px;
+    animation: move 3s infinite alternate;
+    animation-play-state: running;
+}
+@keyframes move {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
